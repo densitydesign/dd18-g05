@@ -1,0 +1,209 @@
+#nodes_1_ > g {
+    opacity: 1;
+}
+
+body{
+    margin-top: 1.5vh;
+    margin-left: 1.5vw;
+    margin-bottom: 1.5vh;
+    margin-right: 1.5vw;
+    background-color: rgb(241,241,241)
+}
+
+/* Stile navbar */
+.navbar{
+width: 97vw;
+height: 4vh;
+font-weight: bold;
+font-size: 1vh;
+background-color: #F60;
+margin: 0;
+position: fixed;
+}
+
+/* Stile della colonna con tutti i commenti */
+.gruppi {
+    width:97vw;
+    position: fixed;
+    margin-top: 6vh;
+    height: 91vh;
+    
+    
+}
+
+.titoli{
+    position: fixed;
+    top:7.5vh;
+    column-gap: 0.8vw;
+    height: 6vh;
+    width: 97vw;
+    z-index: 2;
+    
+}
+
+
+.t{
+display: flex;
+justify-content: center;
+align-items: center;
+box-shadow: inset 5px 5px 10px 0px rgba(255,255,255,0.4);
+border-radius: 20px 20px 0 0 ;
+}
+
+.t.commenti{
+    background-color: transparent;
+    box-shadow:inset 0px 50px 13px -12px rgba(241,241,241)
+
+}
+
+.t.pollution{
+    background-color: rgb(135, 244, 112);
+}
+
+.t.routine{
+    background-color: rgb(188, 108, 255);
+}
+
+.t.richness{
+    background-color: rgb(232, 94, 51);
+}
+
+.t.celebrities{
+    background-color: rgb(255, 238, 84);
+}
+
+.t.everyday{
+    background-color: rgb(253, 174, 205);
+}
+
+
+.b.pollution{
+    background-color: rgb(135, 244, 112);
+}
+
+.b.routine{
+    background-color: rgb(188, 108, 255);
+}
+
+.b.richness{
+    background-color: rgb(232, 94, 51);
+}
+
+.b.celebrities{
+    background-color: rgb(255, 238, 84);
+}
+
+.b.everyday{
+    background-color: rgb(253, 174, 205);
+}
+
+
+
+.colonne{
+    
+ column-gap: 0.8vw;
+ height: 91vh;
+ 
+}
+
+.c{
+    border-radius: 20px 20px 0 0 ;
+    background-color: rgb(255,255,255)
+    
+}
+
+.c.commenti{
+    background-color: transparent;
+}
+
+
+
+.number{ 
+    
+    position: fixed;
+    bottom: 1.5vh;
+    transform-origin: bottom;
+    column-gap: 0.8vw;
+    height: 9vh;
+    width: 97vw;
+    z-index: 2;
+   }
+
+.n{
+    background-color: rgb(255,255,255);
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    border-radius: 10px;
+    box-shadow: 0px 1px 5px 0px rgba(0,0,0,0.25);
+    margin: 0.5%;
+}
+
+.n.commenti{
+   background-color: transparent;
+    color: transparent;
+    box-shadow: none;
+}
+
+
+
+.counter{
+    position: absolute;
+    left:1vw;
+    font-size: xx-large;
+    
+  
+}
+.testo2{
+    position: absolute;
+    right:1vw;
+    margin-top: 1vh;
+}
+
+
+.viewportCommenti{
+    width:97vw;
+    position: absolute;
+    bottom: 0;
+    margin: 0;
+    left: 0;
+    height: 89vh;
+    background-color: transparent;
+    z-index: 1;
+    overflow: scroll;
+}
+
+#commenti{
+    padding: 0;
+    width: 15.5vw ;
+    margin-top: 50vh;
+    margin-left: 0;
+    translate: 16.3vw ;
+    background-color: transparent;
+    font-size: 0.7vw;
+}
+
+.card-header{
+    padding: 0.3vw;
+    margin-top: 0.5vh;
+background-color: none;
+border-bottom: none;
+   
+}
+
+.section {
+    padding: 0;
+    margin: 0;
+    width: 15.5vw;
+    border-radius: 4px;
+}
+
+
+
+/* Stile colonne che salgono */
+.b{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 10%;
+}
