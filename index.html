@@ -51,11 +51,11 @@
       <div class="row colonne">
 
           <div class="col c pollution"> <div class="col b pollution" id="barpoll"> </div> </div>
-          <div class="col c commenti"><div class="col b commenti"> </div> </div>
-          <div class="col c routine"><div class="col b routine"> </div> </div>
-          <div class="col c richness "><div class="col b richness"> </div> </div>
-          <div class="col c celebrities"><div class="col b celebrities"> </div> </div>
-          <div class="col c everyday"><div class="col b everyday"> </div> </div>
+          <div class="col c commenti"> <div class="video"> <iframe class="videoemb" src="https://www.youtube.com/embed/IsZYkcCCKA8?autoplay=1"  allow="autoplay"> </iframe> </div> <div class="col b commenti">  </div>  </div>
+          <div class="col c routine"><div class="col b routine" id="barrout"> </div> </div>
+          <div class="col c richness "><div class="col b richness" id="barrich"> </div> </div>
+          <div class="col c celebrities"><div class="col b celebrities" id="barcele"> </div> </div>
+          <div class="col c everyday"><div class="col b everyday" id="barever"> </div> </div>
           
 
       </div>
@@ -67,23 +67,24 @@
           <div class="testo2">comments</div>
         </div>
         <div class="col n commenti"> 
-          <div class="counter">Ciao Mauri</div>
+          <div class="counter" >Ciao Mauri</div>
           <div class="testo2">30L</div>
+          <a href="#4294" target="_self"> <button id="myBtn">END</button></a>
         </div>
         <div class="col n routine"> 
-          <div class="counter">6666</div>
+          <div class="counter" id="counterrout">0</div>
           <div class="testo2">comments</div>
         </div>
         <div class="col n richness "> 
-          <div class="counter">6666</div>
+          <div class="counter" id="counterrich">0</div>
           <div class="testo2">comments</div>
         </div>
         <div class="col n celebrities">
-          <div class="counter">6666</div>
+          <div class="counter" id="countercele">0</div>
           <div class="testo2">comments</div>
         </div>
         <div class="col n everyday"> 
-          <div class="counter">6666</div>
+          <div class="counter" id="counterever">0</div>
           <div class="testo2">comments</div>
         </div>
         
@@ -92,7 +93,7 @@
 
     </div>
           
-    <div class="viewportCommenti">
+    <div class="viewportCommenti" id="viewportCommenti">
       <div class= "container" id="commenti" >
         <div id="visualization-container" > <p id="testi" class="card-columns"> </p> </div>
       </div> 
