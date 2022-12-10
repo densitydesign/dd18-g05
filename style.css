@@ -170,7 +170,7 @@ border-radius: 20px 20px 0 0 ;
     height: 89vh;
     background-color: transparent;
     z-index: 1;
-    overflow: scroll;
+    overflow-y: scroll;
 }
 
 #commenti{
