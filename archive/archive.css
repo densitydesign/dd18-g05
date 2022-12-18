@@ -253,25 +253,25 @@ body {
 
 /* KEYWORDS STILIZZATE */
 .CLUSTER1 {
-  background-color: rgb(212, 105, 212);
+  background-color: rgb(198, 128, 255);
   font-weight: bold;
 }
 
 .CLUSTER2 {
-  background-color: pink;
+  background-color: rgb(253, 174, 205);
   font-weight: bold;
 }
 
 .CLUSTER3 {
-  background-color: lightgreen;
+  background-color: rgb(135, 244, 112);
   font-weight: bold;
 }
 .CLUSTER4 {
-  background-color: lightcoral;
+  background-color: rgb(232, 111, 74);
   font-weight: bold;
 }
 .CLUSTER5 {
-  background-color: lightgoldenrodyellow;
+  background-color: rgb(255, 238, 84);
   font-weight: bold;
 }
 
