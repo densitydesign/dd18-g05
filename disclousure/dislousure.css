@@ -146,6 +146,8 @@ body {
   top: 0vh;
   left: 30vw;
   width: 40vw;
+  font-family: MonReg;
+  font-size: 1.2vw;
   margin-bottom: 3vh;
   /* font-size: 1vw; */
 }
