@@ -371,20 +371,27 @@ for (let buttoneve of buttonseve) {
 
 // Pollution
 $("#titpol").click(function () {
-  console.log("okbro");
   $("#contenitorepop").css({
     display: "block",
-  });
-  $("#DivScroll").css({
-    pointerevents: "none",
   });
   $("#poppollution").css({
     display: "block",
   });
+  $("#poproutine").css({
+    display: "none",
+  });
+  $("#poprichness").css({
+    display: "none",
+  });
+  $("#popcelebrities").css({
+    display: "none",
+  });
+  $("#popeveryday").css({
+    display: "none",
+  });
 });
 
 $("#closepol").click(function () {
-  console.log("okbro");
   $("#contenitorepop").css({
     display: "none",
   });
@@ -398,8 +405,20 @@ $("#titrou").click(function () {
   $("#contenitorepop").css({
     display: "block",
   });
+  $("#poppollution").css({
+    display: "none",
+  });
   $("#poproutine").css({
     display: "block",
+  });
+  $("#poprichness").css({
+    display: "none",
+  });
+  $("#popcelebrities").css({
+    display: "none",
+  });
+  $("#popeveryday").css({
+    display: "none",
   });
 });
 
@@ -417,8 +436,20 @@ $("#titric").click(function () {
   $("#contenitorepop").css({
     display: "block",
   });
+  $("#poppollution").css({
+    display: "none",
+  });
+  $("#poproutine").css({
+    display: "none",
+  });
   $("#poprichness").css({
     display: "block",
+  });
+  $("#popcelebrities").css({
+    display: "none",
+  });
+  $("#popeveryday").css({
+    display: "none",
   });
 });
 
@@ -436,8 +467,20 @@ $("#titcel").click(function () {
   $("#contenitorepop").css({
     display: "block",
   });
+  $("#poppollution").css({
+    display: "none",
+  });
+  $("#poproutine").css({
+    display: "none",
+  });
+  $("#poprichness").css({
+    display: "none",
+  });
   $("#popcelebrities").css({
     display: "block",
+  });
+  $("#popeveryday").css({
+    display: "none",
   });
 });
 
@@ -454,6 +497,18 @@ $("#closecel").click(function () {
 $("#titeve").click(function () {
   $("#contenitorepop").css({
     display: "block",
+  });
+  $("#poppollution").css({
+    display: "none",
+  });
+  $("#poproutine").css({
+    display: "none",
+  });
+  $("#poprichness").css({
+    display: "none",
+  });
+  $("#popcelebrities").css({
+    display: "none",
   });
   $("#popeveryday").css({
     display: "block",
