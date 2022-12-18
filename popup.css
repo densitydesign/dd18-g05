@@ -183,8 +183,9 @@
   bottom: 0;
   margin-bottom: 2vh;
   height: 5vh;
-  width: 90%;
+
   z-index: 500;
+  width: 90%;
   background-color: #fdaecd;
   box-shadow: -10px -30px 8px #fdaecd;
 }
