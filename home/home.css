@@ -20,6 +20,7 @@ body {
   -ms-overflow-style: none; /* for Internet Explorer, Edge */
   scrollbar-width: none; /* for Firefox */
   overflow-y: scroll;
+  background-color: black;
 }
 
 body::-webkit-scrollbar {
@@ -47,6 +48,10 @@ a:hover {
   text-shadow: 0px 1px 6px #ffffff, 0px 4px 10px #2400ff, -2px -2px 12px #2400ff;
 }
 
+.pin-spacer {
+  background-color: transparent;
+}
+
 #home {
   position: fixed;
   z-index: 0;
@@ -58,10 +63,11 @@ a:hover {
   text-align: center;
 }
 .imagehome {
+  height: auto;
+  transform: translateX(-50%);
   position: absolute;
   width: 100vw;
   top: -5vh;
-  left: 0;
 }
 .titlehome {
   position: relative;
@@ -79,6 +85,7 @@ a:hover {
   position: relative;
   height: 95vh;
   z-index: 1;
+  background-color: transparent;
 }
 .card {
   background: #f1f1f1;
@@ -172,7 +179,7 @@ a:hover {
   position: absolute;
   margin-left: 2vw;
   font-family: "Times New Roman", Times, serif;
-  font-size: 10vh;
+  font-size: 5.5vw;
   line-height: 92%;
   letter-spacing: -0.045em;
   font-weight: 400;
@@ -460,11 +467,16 @@ a:hover {
 }
 #kyliespan:hover {
   color: blue;
+  cursor: default;
   text-shadow: 0px 1px 6px #ffffff, 0px 4px 10px #2400ff, -2px -2px 12px #2400ff;
 }
 
 #keywordButton {
   color: blue;
+}
+
+#keywordButton:hover {
+  cursor: default;
 }
 
 .edit #kylie {

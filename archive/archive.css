@@ -33,7 +33,7 @@ body {
   column-gap: 0.8vw;
   height: 6vh;
   width: 97vw;
-  z-index: 2;
+  z-index: 3;
 }
 
 .t {
@@ -274,38 +274,33 @@ body {
 
 /* KEYWORDS STILIZZATE */
 .CLUSTER1 {
-  background-color: rgb(198, 128, 255);
-  font-weight: bold;
+  background-color: rgb(202, 140, 255);
 }
 
 .CLUSTER2 {
   background-color: rgb(253, 174, 205);
-  font-weight: bold;
 }
 
 .CLUSTER3 {
   background-color: rgb(135, 244, 112);
-  font-weight: bold;
 }
 .CLUSTER4 {
-  background-color: rgb(232, 111, 74);
-  font-weight: bold;
+  background-color: rgb(239, 125, 89);
 }
 .CLUSTER5 {
   background-color: rgb(255, 238, 84);
-  font-weight: bold;
 }
 
 .filters1 {
-  position: relative;
+  position: fixed;
   justify-content: center;
   align-items: center;
-  top: 6vh;
+  top: 15vh;
   width: 15.5vw;
   padding: 0;
   height: 20vh;
   z-index: 2;
-  border-radius: 10px;
+  border-radius: 0px 0px 10px 10px;
   background-color: #f1f1f1;
 }
 

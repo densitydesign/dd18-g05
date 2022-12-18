@@ -187,9 +187,13 @@ body {
   margin-top: 1vh;
 }
 
+body::-webkit-scrollbar {
+  display: none;
+}
+
 .viewportCommenti::-webkit-scrollbar {
   position: fixed;
-  opacity: 0;
+  opacity: 1;
   width: 4px;
   background-color: transparent;
   z-index: -200;
@@ -201,11 +205,13 @@ body {
 }
 
 .viewportCommenti::-webkit-scrollbar-thumb {
-  background: #919191;
+  background: #c7c7c7;
+  border-radius: 3px;
 }
 
 .viewportCommenti::-webkit-scrollbar-track {
   background: transparent;
+  opacity: 0;
 }
 
 .viewportCommenti {
@@ -303,26 +309,21 @@ video {
 
 /* KEYWORDS STILIZZATE */
 .CLUSTER1 {
-  background-color: rgb(198, 128, 255);
-  font-weight: bold;
+  background-color: rgb(202, 140, 255);
 }
 
 .CLUSTER2 {
   background-color: rgb(253, 174, 205);
-  font-weight: bold;
 }
 
 .CLUSTER3 {
   background-color: rgb(135, 244, 112);
-  font-weight: bold;
 }
 .CLUSTER4 {
-  background-color: rgb(232, 111, 74);
-  font-weight: bold;
+  background-color: rgb(239, 125, 89);
 }
 .CLUSTER5 {
   background-color: rgb(255, 238, 84);
-  font-weight: bold;
 }
 
 .testobacktotop {
@@ -401,7 +402,7 @@ video {
 }
 
 .viewportCommenti::-webkit-scrollbar {
-  display: none; /* for Chrome, Safari, and Opera */
+  display: block; /* for Chrome, Safari, and Opera */
 }
 
 .testo2 h3 {
