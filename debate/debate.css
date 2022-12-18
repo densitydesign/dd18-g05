@@ -53,6 +53,12 @@ body {
   background-color: transparent;
   box-shadow: inset 0px 50px 13px -12px rgba(241, 241, 241);
 }
+.t.commenti:hover {
+  background-color: transparent;
+  color: black;
+  cursor: initial;
+  box-shadow: inset 0px 50px 13px -12px rgba(241, 241, 241);
+}
 
 .t.pollution {
   background-color: rgb(135, 244, 112);
@@ -79,7 +85,7 @@ body {
   box-shadow: inset 0px 2px 2px rgba(0, 0, 0, 0.5),
     inset 4.6px 4.6px 12px rgba(255, 255, 255, 0.6);
   color: white;
-  cursor: grab;
+  cursor: pointer;
 }
 
 .b.pollution {
