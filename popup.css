@@ -62,6 +62,7 @@
 }
 
 .frase2 {
+  font-family: MonReg;
   position: relative;
   width: 20%;
   margin-right: 10vw;
@@ -196,6 +197,7 @@
 }
 
 .focus {
+  font-family: MonReg;
   position: relative;
   margin-top: 1vh;
   font-size: 1rem;
