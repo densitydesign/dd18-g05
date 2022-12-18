@@ -9,7 +9,7 @@ body {
   width: 100vw;
   height: 101vh;
 
-  overflow: auto;
+  overflow-x: hidden;
 }
 
 /* Stile della colonna con tutti i commenti */

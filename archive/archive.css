@@ -6,16 +6,6 @@ body {
   background-color: black;
 }
 
-@font-face {
-  font-family: MonReg;
-  src: url(./assets/fonts/MonumentGrotesk-Regular.otf);
-}
-
-@font-face {
-  font-family: MonMed;
-  src: url(./assets/fonts/MonumentGrotesk-Medium.otf);
-}
-
 /* Stile della colonna con tutti i commenti */
 .DivScroll {
   margin-left: 1.5vw;
@@ -55,8 +45,8 @@ body {
 }
 
 .t.commenti {
-box-shadow: none;
-color: white;
+  box-shadow: none;
+  color: white;
 }
 
 .t.pollution {
@@ -102,16 +92,15 @@ color: white;
 .colonne {
   column-gap: 0.8vw;
   height: 89vh;
-overflow-y: hidden;
+  overflow-y: hidden;
 }
 
 .c {
   padding: 0;
   border-radius: 20px 20px 0 0;
-  background: #F1F1F1;
+  background: #f1f1f1;
   box-shadow: 0px 4px 6px #f1f1f1;
   border-radius: 10px;
-
 }
 
 .c.commenti {
@@ -123,7 +112,6 @@ overflow-y: hidden;
   color: #f1f1f1;
   line-height: 2.3vh;
   font-size: 0.9vw;
-
 }
 
 .number {
@@ -211,7 +199,6 @@ overflow-y: hidden;
   font-size: 0.8rem;
   background-color: white;
   border-bottom: none;
-  
 }
 
 .section {
@@ -313,7 +300,6 @@ overflow-y: hidden;
   font-size: 0.9rem;
   box-shadow: 0.7392739653587341px 1.4785479307174683px 2.9570958614349365px 0px
     rgba(0, 0, 0, 0.2);
-  
 }
 .filters3 {
   position: absolute;
@@ -321,12 +307,13 @@ overflow-y: hidden;
   height: 18vh;
   padding-top: 1vh;
   padding-bottom: 3vh;
-  overflow-y: scroll;}
+  overflow-y: scroll;
+}
 
-  .filters3::-webkit-scrollbar {
-    width: 0.001vw;
-    display: none;
-  }
+.filters3::-webkit-scrollbar {
+  width: 0.001vw;
+  display: none;
+}
 
 .reset {
   position: absolute;
