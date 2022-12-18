@@ -375,6 +375,9 @@ $("#titpol").click(function () {
   $("#contenitorepop").css({
     display: "block",
   });
+  $("#DivScroll").css({
+    pointerevents: "none",
+  });
   $("#poppollution").css({
     display: "block",
   });
