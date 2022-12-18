@@ -1,0 +1,276 @@
+#nodes_1_ > g {
+  opacity: 1;
+}
+
+@font-face {
+  font-family: MonReg;
+  src: url(./assets/fonts/MonumentGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: MonMed;
+  src: url(./assets/fonts/MonumentGrotesk-Medium.otf);
+}
+
+/* START ABOUT */
+.modal {
+  position: fixed; /* Stay in place */
+  z-index: 2; /* Sit on top */
+  left: -35vw;
+  top: 0vh;
+  height: 100vh;
+  width: 25vw; /* Full width */
+  background-color: transparent;
+}
+
+.modal-content {
+  margin-top: 8vh;
+  width: 25vw;
+  height: 90vh;
+  position: fixed;
+  margin-left: 1vw;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 1vw;
+  overflow-y: scroll;
+}
+
+#modalBody {
+  padding: 5%;
+  border: none;
+  color: black;
+}
+#modalBody h2 {
+  font-family: "Times New Roman", Times, serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 7vh;
+  line-height: 81%;
+  letter-spacing: -0.08em;
+  margin-top: 1vh;
+  margin-bottom: 16vh;
+}
+#modalBody h1 {
+  font-family: MonMed;
+  font-size: 2vh;
+  margin-top: 2vh;
+}
+
+#modalBody p {
+  font-family: MonReg;
+  font-size: 2.2vh;
+  line-height: 1em;
+  margin-bottom: 5vh;
+  z-index: 1;
+}
+#modalBody img {
+  position: absolute;
+  z-index: -1;
+  top: 5vh;
+  width: 180%;
+}
+
+.modal-content::-webkit-scrollbar {
+  display: none;
+}
+/* END ABOUT */
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+  from {
+    left: -35vw;
+    opacity: 1;
+  }
+  to {
+    left: 1vw;
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    left: -35vw;
+    opacity: 1;
+  }
+  to {
+    left: 1vw;
+    opacity: 1;
+  }
+}
+@-webkit-keyframes slideOut {
+  from {
+    left: 1vw;
+    opacity: 1;
+  }
+  to {
+    left: -35vw;
+    opacity: 1;
+  }
+}
+
+@keyframes slideOut {
+  from {
+    left: 1vw;
+    opacity: 1;
+  }
+  to {
+    left: -35vw;
+    opacity: 1;
+  }
+}
+
+/* fine modal
+
+/* Stile navbar */
+
+.navbar {
+  margin-left: 0vw;
+  margin-right: 0vw;
+  margin-top: 0.5vw;
+  position: fixed;
+  z-index: 4;
+  height: 4vh;
+  width: 100vw;
+  column-gap: 1.5vw;
+  font-size: 1.2vw;
+  font-family: MonMed;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+}
+
+/* .logo {
+  padding: 0.3vh;
+  background: #ffffff;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+  text-align: center;
+ 
+} */
+
+#logo-jet {
+  padding: 0.3vh;
+  background: #ffffff;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  text-align: center;
+  margin-left: 0;
+  width: 8vw;
+}
+
+.navbar-sx {
+  display: flex;
+  align-items: flex-end;
+}
+
+.button-nav-explore {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+
+  background: #ffffff;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  text-align: center;
+  width: 10vw;
+}
+
+.navbar a {
+  color: black;
+}
+
+.button-nav-archive {
+  padding-top: 0.2vh;
+  padding-bottom: 0.2vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+  margin-bottom: 0.3vh;
+
+  background: #ffffff;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  text-align: center;
+  width: 10vw;
+}
+
+.button-nav-archive:hover {
+  background: black;
+  color: #f1f1f1;
+  box-shadow: inset 0px -2px 10px rgba(255, 255, 255, 0.5),
+    inset 0px 2px 10px rgba(255, 255, 255, 0.4);
+}
+
+.dropdown-menu {
+  background: transparent;
+  border: 0px;
+  padding-top: 0.3vw;
+  display: none;
+}
+
+.navbar a:hover {
+  text-decoration: none;
+  text-shadow: none;
+}
+
+.dropdown:hover .dropdown-menu {
+  display: block;
+  margin-top: 0;
+}
+
+.button-nav-disclosure {
+  padding-top: 0.5vh;
+  padding-bottom: 0.5vh;
+  padding-left: 1vh;
+  padding-right: 1vh;
+
+  background: #ffffff;
+  box-shadow: inset 0px -2px 10px rgba(0, 0, 0, 0.3);
+  border-radius: 100px;
+  text-align: center;
+  width: 10vw;
+}
+
+/* hover sui tasti */
+#logo-jet:hover {
+  background: black;
+  color: #f1f1f1;
+  box-shadow: inset 0px -2px 10px rgba(255, 255, 255, 0.5),
+    inset 0px 2px 10px rgba(255, 255, 255, 0.4);
+  border-radius: 100px;
+
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+#logo-jet a:hover {
+  color: #f1f1f1;
+}
+
+.button-nav-disclosure:hover {
+  background: black;
+  color: #f1f1f1;
+  box-shadow: inset 0px -2px 10px rgba(255, 255, 255, 0.5),
+    inset 0px 2px 10px rgba(255, 255, 255, 0.4);
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-nav-explore:hover {
+  background: #f1f1f1;
+  box-shadow: inset 0px -2.83784px 0.567568px rgba(255, 255, 255, 0.25),
+    inset 0px -2.27027px 2.27027px rgba(0, 0, 0, 0.25),
+    inset 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.25),
+    inset 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.3);
+
+  border-radius: 100px;
+  cursor: pointer;
+}
+
+.button-nav-explore:after {
+  background: #f1f1f1;
+  box-shadow: inset 0px -2.83784px 0.567568px rgba(255, 255, 255, 0.25),
+    inset 0px -2.27027px 2.27027px rgba(0, 0, 0, 0.25),
+    inset 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.25),
+    inset 0px 2.27027px 2.27027px rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+}

@@ -1,0 +1,136 @@
+.popupcontainer {
+  display: none;
+  z-index: 400;
+  left: 50%;
+  top: 50%;
+  position: absolute;
+  margin-top: -40vh;
+  margin-left: -30vw;
+  width: 60vw;
+  height: 80vh;
+
+}
+
+.popup {
+  width: 60vw;
+  height: 80vh;
+  padding: 1.5vw;
+  display: none;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+}
+
+#poppollution {
+  background-color: rgb(135, 244, 112);
+}
+
+#poproutine {
+  background-color: rgb(188, 108, 255);
+}
+
+#poprichness {
+  background-color: rgb(232, 94, 51);
+}
+
+#popcelebrities {
+  background-color: rgb(255, 238, 84);
+}
+
+#popeveryday {
+  background-color: rgb(253, 174, 205);
+}
+
+.titpop {
+  font-family: "Times New Roman", Times, serif;
+  padding: 0.6vh;
+  font-size: 1.5rem;
+  text-align: center;
+  box-shadow: inset 3.66071px 3.66071px 7.32143px rgba(255, 255, 255, 0.4),
+    inset 0px -5.85714px 14.6429px rgba(0, 0, 0, 0.4);
+  border-radius: 100px;
+}
+
+.frase1 {
+  font-family: "Times New Roman", Times, serif;
+  font-size: 4rem;
+  margin-right: 20%;
+  margin-top: 3%;
+  letter-spacing: -0.055em;
+  font-weight: 400;
+  line-height: 87%;
+}
+
+.frase2 {
+  margin-right: 1vw;
+  margin-top: 5%;
+  line-height: 98.5%;
+  margin-bottom: 5%;
+  font-size: 1.4rem;
+}
+
+.titlist {
+  font-family: "Times New Roman", Times, serif;
+  text-align: left;
+  position: relative;
+  margin-top: 30vh;
+  width: 100%;
+  font-size: 2rem;
+
+  
+}
+.closepop {
+  text-align: right;
+}
+
+.close {
+  opacity: 1;
+}
+
+.close:hover {
+  opacity: 1;
+}
+
+.listcont {
+  position: relative;
+  text-align: left;
+  height: 45vh;
+  margin-top: 20%;
+  bottom: 0;
+  overflow-y: scroll;
+  /* border-style: dashed; */
+}
+
+.listcont::-webkit-scrollbar {
+  display: none;
+}
+
+.list {
+  bottom: 0;
+
+  font-size: 2rem;
+}
+
+.focus {
+  font-size: 1rem;
+  line-height: 110%;
+  top: 10vh;
+}
+
+.titfocus {
+  font-size: 1rem;
+  font-family: MonMed;
+  line-height: 110%;
+  top: 8vh;
+}
+
+
+.nklist {
+  font-family: "Times New Roman", Times, serif;
+}
+
+.spiegundo {
+  font-family: MonReg;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+}

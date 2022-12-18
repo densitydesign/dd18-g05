@@ -1,0 +1,472 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <title>JETOLOGY - dislousure</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./disclousure/dislousure.css">
+  <link rel="stylesheet" href="./headings.css">
+
+  <script src="libraries/p5.min.js"></script>
+  <script src="libraries/p5.sound.min.js"></script>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+    crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+    crossorigin="anonymous"></script>
+
+
+</head>
+
+<body>
+
+   <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="myModal1">
+     
+      <div id="modalBody">
+        <h2>#banprivatejets:<br>the social debate</h2>
+        <h1>THE PROJECT</h1>
+        <p id="pTheProject">
+          In 2022 private jets have become a relevant topic in the fight against climate change.
+Using #banprivatejets, groups of activists, politicians
+and scientists have begun to highlight the need
+to tax missions of private jets more decisively
+or, more extremely, to ban them. 
+        </p>
+        <h1>THE TEAM</h1>
+        <div class="row">
+          <div class="col">
+            
+            <p>Kangying Chen<br>Giuseppe Defilippis<br>Stefano Gubiolo<br>Maria Martinuz
+              </p>
+              <img src="./assets/gif/team3.gif" autoplay loop></img>
+          </div>
+          <div class="col">
+            <p>Donato Renzulli<br>Antonio Sacchet<br>Yuying Tang
+                </p>
+                
+          </div>
+          
+        </div>
+
+      </div>
+     
+    </div>
+  </div>
+  
+
+  <div class="row navbar">
+    <div class="col-6 logo"> <a href="./index.html"> <div id="logo-jet">   Jetology</div></a>  </div>
+<div class="navbar-sx">
+
+  <div class="col dropdown button-nav-explore">
+      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">explore</a>
+    <div class="dropdown-menu">
+     <a class="dropdown-item button-nav-archive" href="./debate.html">DEBATE</a>
+      <a class="dropdown-item button-nav-archive" href="./archive.html">DATASET</a>
+    </div>
+
+
+  </div>
+  <div class="col disclosure">  <a href="./disclosure.html">  <div class="button-nav-disclosure">  disclosure</div></a></div>
+  </div>
+</div>
+     <!-- navbar fine -->
+
+
+  <div class="cards">
+    <div class="card third" id="third">
+      <div class="heading">
+        <div class="title">WEBSITE INTERACTION</div>
+        <div class="number">3</div>
+        <div id="scrollBox">
+          <div class="mainParagraph">
+            <h1>Website Interaction</h1>
+            <h2>Two modes for<br>archiving comments</h2>
+            <div class="paragraph">
+              <h3>The<br>Sorting</h3>
+              <p>
+                In the main page of the website, the “Explore”, the user is able to see the unfolding of the process of
+                categorization of the comments. By scrolling in the page the comments (that are first presented without
+                a cluster in the “Comments” column, slide into the other columns according to the topic discussed in it.
+                This happens thanks to the keywords: the presence of
+                the words determines a class, which represents the 5 different topics.
+                The “Pollution” column is separated from the others to represent the topic that was expected to find
+                divided from the other 4, that were considered to be more unexpected in the debate. When a comment has
+                keywords from more than one topic it stays in the “Comments” column and remains undefined.
+              </p>
+
+              <div class="row script">
+
+                <pre>
+var pollution = gsap.utils.toArray('.section.POLLUTION');
+
+pollution.forEach((section) => {
+                 
+  gsap.to(section, {
+    x: "-16.3vw",
+    scrollTrigger: {
+      scroller: ".viewportCommenti",
+      trigger: section,
+      start: 'top top+=65%',
+      end: '+=100',
+      markers: false,
+      toggleActions: "play none none reverse",
+      preventOverlaps: preventOverlaps,
+      fastScrollEnd: fastScrollEnd
+     
+    }
+  });
+                 
+  gsap.to(section, {
+    
+    onStart: toto, onReverseComplete: totoreverse,
+                 
+    scrollTrigger: {
+      scroller: ".viewportCommenti",
+      trigger: section,
+      start: 'top top+=65%',
+      end: '+=100',
+      markers: false,
+      scrub: true,
+      repeat: 1,
+      fastScrollEnd: fastScrollEnd,
+    }
+  })
+                
+                
+                
+  function toto() {
+                
+    contatorePollution = contatorePollution + 0.05;
+    valorePollution = valorePollution + 1;
+    document.getElementById("barpoll").style.height = 10 + contatorePollution + "vh";
+    document.getElementById("counterpoll").innerHTML = valorePollution;
+  }
+
+  function totoreverse() {
+
+    contatorePollution = contatorePollution - 0.05;
+    valorePollution = valorePollution - 1;
+    document.getElementById("barpoll").style.height = 10 + contatorePollution + "vh";
+    document.getElementById("counterpoll").innerHTML = valorePollution;
+
+  }
+
+                
+})
+
+</pre>
+
+              </div>
+              <p class="description">SCROLL AND CLUSTERIZE</p>
+
+              <div class="row script">
+                <pre>
+for (let i = 1; i < 4484; i++) {
+  let identificatore = i.toString();
+  for (let k = 0; k < 185; k++) {
+        document.getElementById(identificatore).innerHTML =
+        document.getElementById(identificatore).innerHTML.replace(keywords[k], change[k]);
+  }
+}
+  
+//KEYWORDS ARRAY
+
+let keywords = [/\b(aircraft)\b/gi, /\b(airplane)\b/gi, /\b(airplanes)\b/gi, /\b(airport)\b/gi, /\b(airports)\b/gi, /\b(animals)\b/gi,
+    /\b(atmosphere)\b/gi, /\b(aviation)\b/gi, /\b(bag)\b/gi, /\b(ban)\b/gi, /\b(beach)\b/gi, /\b(bike)\b/gi, /\b(millionaires)\b/gi,
+    /\b(billionaire)\b/gi, /\b(billionaires)\b/gi, /\b(bottle)\b/gi, /\b(boycott)\b/gi, /\b(brands)\b/gi, /\b(bryant)\b/gi, /\b(bus)\b/gi,
+    /\b(business)\b/gi, /\b(ca)\b/gi, /\b(california)\b/gi, /\b(cam)\b/gi, /\b(camarillo)\b/gi, /\b(cans)\b/gi, /\b(capitalism)\b/gi,
+    /\b(car)\b/gi, /\b(cars)\b/gi, /\b(carbon)\b/gi, /\b(celeb)\b/gi, /\b(celebrities)\b/gi, /\b(celebrity)\b/gi, /\b(celebs)\b/gi,
+    /\b(change)\b/gi, /\b(charter)\b/gi, /\b(chickpeas)\b/gi, /\b(china)\b/gi, /\b(elite)\b/gi, /\b(climate)\b/gi, /\b(company)\b/gi,
+    /\b(companies)\b/gi, /\b(consequences)\b/gi, /\b(consumption)\b/gi, /\b(corporations)\b/gi, /\b(cosmetics)\b/gi, /\b(makeup)\b/gi,
+    /\b(culture)\b/gi, /\b(damage)\b/gi, /\b(dicaprio)\b/gi, /\b(leo)\b/gi, /\b(leonardo)\b/gi, /\b(drake)\b/gi, /\b(drakes)\b/gi, /\b(drive)\b/gi,
+    /\b(driving)\b/gi, /\b(drought)\b/gi, /\b(eat)\b/gi, /\b(electric)\b/gi, /\b(elon)\b/gi, /\b(emissions)\b/gi, /\b(environmental)\b/gi, /\b(environment)\b/gi,
+    /\b(europe)\b/gi, /\b(fan)\b/gi, /\b(fans)\b/gi, /\b(fault)\b/gi, /\b(fire)\b/gi, /\b(fires)\b/gi, /\b(floyd)\b/gi, /\b(fly)\b/gi, /\b(flying)\b/gi,
+    /\b(flight)\b/gi, /\b(food)\b/gi, /\b(footprint)\b/gi, /\b(france)\b/gi, /\b(fuel)\b/gi, /\b(garbage)\b/gi, /\b(gas)\b/gi, /\b(government)\b/gi,
+    /\b(green)\b/gi, /\b(hamilton)\b/gi, /\b(hangar)\b/gi, /\b(hanger)\b/gi, /\b(heat)\b/gi, /\b(helicopters)\b/gi, /\b(henderson)\b/gi, /\b(hills)\b/gi,
+    /\b(hollywood)\b/gi, /\b(hour)\b/gi, /\b(hours)\b/gi, /\b(hypocrites)\b/gi, /\b(ig)\b/gi, /\b(impact)\b/gi, /\b(india)\b/gi, /\b(industry)\b/gi,
+    /\b(jack)\b/gi, /\b(jets)\b/gi, /\b(joke)\b/gi, /\b(kardashian)\b/gi, /\b(kardashians)\b/gi, /\b(kim)\b/gi, /\b(kimkardashian)\b/gi, /\b(kourtney)\b/gi,
+    /\b(kenny)\b/gi, /\b(kobe)\b/gi, /\b(kylie)\b/gi, /\b(kyliejenner)\b/gi, /\b(jenner)\b/gi, /\b(jenners)\b/gi, /\b(la)\b/gi, /\b(law)\b/gi, /\b(laws)\b/gi,
+    /\b(lifestyle)\b/gi, /\b(maintenance)\b/gi, /\b(mayweather)\b/gi, /\b(meat)\b/gi, /\b(media)\b/gi, /\b(miles)\b/gi, /\b(minute)\b/gi, /\b(minutes)\b/gi,
+    /\b(money)\b/gi, /\b(musk)\b/gi, /\b(ocean)\b/gi, /\b(oil)\b/gi, /\b(oxnard)\b/gi, /\b(paper)\b/gi, /\b(pay)\b/gi, /\b(peasants)\b/gi, /\b(people)\b/gi,
+    /\b(peoples)\b/gi, /\b(ppl)\b/gi, /\b(pilot)\b/gi, /\b(pilots)\b/gi, /\b(planes)\b/gi, /\b(plane)\b/gi, /\b(planet)\b/gi, /\b(world)\b/gi, /\b(earth)\b/gi,
+    /\b(plastic)\b/gi, /\b(politicians)\b/gi, /\b(politician)\b/gi, /\b(polluting)\b/gi, /\b(pollution)\b/gi, /\b(privacy)\b/gi, /\b(recycle)\b/gi,
+    /\b(recycling)\b/gi, /\b(repositioning)\b/gi, /\b(rich)\b/gi, /\b(ride)\b/gi, /\b(rides)\b/gi, /\b(rules)\b/gi, /\b(scam)\b/gi, /\b(scott)\b/gi,
+    /\b(seinfeld)\b/gi, /\b(service)\b/gi, /\b(shame)\b/gi, /\b(society)\b/gi, /\b(straw)\b/gi, /\b(straws)\b/gi, /\b(tax)\b/gi, /\b(taxed)\b/gi,
+    /\b(taxes)\b/gi, /\b(taylor)\b/gi, /\b(tiktok)\b/gi, /\b(tons)\b/gi, /\b(toronto)\b/gi, /\b(town)\b/gi, /\b(traffic)\b/gi, /\b(trip)\b/gi,
+    /\b(trips)\b/gi, /\b(turtles)\b/gi, /\b(twitter)\b/gi, /\b(uk)\b/gi, /\b(valley)\b/gi, /\b(van nuys)\b/gi, /\b(vegan)\b/gi, /\b(vegas)\b/gi,
+    /\b(ventura)\b/gi, /\b(county)\b/gi, /\b(waste)\b/gi, /\b(water)\b/gi, /\b(wealth)\b/gi, /\b(wedding)\b/gi];
+  </pre>
+              </div>
+              <p class="description">CHANGE COLOR TO THE KEYWORDS</p>
+            </div>
+
+            <div class="paragraph">
+              <h3>Reading &<br>
+                Filtering</h3>
+              <p>
+                In the second page of the “Explore”, the “Archive”, the user can consult the complete list of comments
+                already divided into the five areas of discussion. It is possible to read the comments in detail and
+                compare those in different columns (topics). In addition, at the top of each column there are all the
+                keywords and it is possible to select them one at a time to display only comments that contain a
+                particular word. The filter also applies to the column of comments that remain undefined due to the
+                presence of multiple words from different clusters. This page is intended to complement the archival
+                experience of the first one and to have a more complete view of the result of the splitting process.
+              </p>
+              <div class="row script">
+                <pre>
+const buttonspoll = document.getElementsByClassName("pollutionfilter");
+  
+const buttonPressedpoll = e => {
+  let idclick = e.target.id;
+  let arreypoll = document.getElementsByClassName("pollutionfilter");
+  for (var i = 0; i < arreypoll.length; i++) {
+    arreypoll[i].style.filter = "invert(0)";
+  }
+                
+  document.getElementById(idclick).style.filter = "invert(1)";
+                
+  for (let i = 1; i < 4484; i++) {
+    let idstring = i.toString();
+    if ( document.getElementById(idstring).className.match(/(?:^|\s)polcom(?!\S)/) || document.getElementById(idstring).className.match(/(?:^|\s)undcom(?!\S)/) ){
+    document.getElementById(idstring).style.display = "block";}}
+  
+  for (let i = 1; i < 4484; i++) {
+    let idstring = i.toString();
+    let compare = document.getElementById(idstring).getElementsByTagName("span");
+    let displaycheck = 0;
+    for (let j = 0; j < compare.length; j++) {
+        if (compare[j].id == idclick) {
+          displaycheck = 1;
+        }}
+    if ( document.getElementById(idstring).className.match(/(?:^|\s)polcom(?!\S)/) || document.getElementById(idstring).className.match(/(?:^|\s)undcom(?!\S)/) ){
+        if (displaycheck != 1) {
+          document.getElementById(idstring).style.display = "none";
+        }
+      }
+    }
+  
+}
+                
+for (let buttonpoll of buttonspoll) {
+buttonpoll.addEventListener("click", buttonPressedpoll);
+
+</pre>
+              </div>
+              <p class="description">FILTER PER KEYWORD</p>
+              <img src="./assets/pics/faculty.png" id="faculty"></img>
+
+            </div>
+
+
+
+          </div>
+        </div>
+      </div>
+
+    </div>
+    <div class="card second" id="second">
+      <div class="heading">
+        <div class="title">DATA SCRAPING</div>
+        <div class="number">2</div>
+        <div id="scrollBox">
+          <div class="mainParagraph">
+            <h1>Data Scraping</h1>
+            <h2>Cleaning the dataset<br>and defining the clusters</h2>
+            <div class="paragraph">
+              <h3>Recurring<br>
+                Words</h3>
+              <p>
+                Starting from that matrix the team found the 136 most recurring words in the comments and put them in a
+                new row, joining the ones that had the same meaning (but different grammar, errors, syntax). In order to
+                understand which are the topics discussed by people in the comments we analyzed the keywords collected:
+                by looking at them we were able to identify five main areas of discussion.
+              </p>
+            </div>
+            <div class="paragraph">
+              <h3>The Four<br>
+                Topics</h3>
+              <p>
+                The first topic found is about pollution in general and pollution caused by private jets. This was the
+                first and most expected topic found since the debate started mainly to talk about the impact of private
+                jets on climate change. After that we were left with a lot of other words and among them we were able to
+                detect 4 topics: richness, celebrities, flight routine and everyday actions.
+              <div class="row keywords">
+                <div class="col">
+                  POLLUTION<br><br>
+                  atmosphere<br>
+                  ban<br>
+                  carbon<br>
+                  change<br>
+                  china<br>
+                  climate<br>
+                  consequences<br>
+                  damage<br>
+                  emissions<br>
+                  environmental<br>
+                  europe<br>
+                  fault<br>
+                  fire<br>
+                  footprint<br>
+                  france<br>
+                  gas<br>
+                  green<br>
+                  heat<br>
+                  impact<br>
+                  india<br>
+                  industry<br>
+                  planet<br>
+                  pollution<br>
+                  tons<br>
+                  turtles<br>
+                  uk
+                </div>
+                <div class="col">
+                  FLIGHT<br>
+                  ROUTINE<br><br>
+                  airplane<br>
+                  airport<br>
+                  aviation<br>
+                  charter<br>
+                  flight<br>
+                  fuel<br>
+                  hangar<br>
+                  maintenance<br>
+                  pilot<br>
+                  repositioning<br>
+                  service<br>
+                  town
+                </div>
+                <div class="col">
+                  CLASS<br>STRUGLE<br><br>billionaire<br>boycott<br>brands<br>business<br>capitalism<br>corporations<br>eat<br>elite<br>government<br>ig<br>law<br>lifestyle<br>millionaires<br>money<br>oil<br>pay<br>people<br>politicians<br>rich<br>rules<br>scam<br>tax<br>wealth
+                </div>
+                <div class="col">
+                  CELEBRITIES<br><br>camarillo<br>celeb<br>county<br>culture<br>dicaprio<br>drake<br>drive<br>elon<br>fan<br>hamilton<br>helicopters<br>henderson<br>hollywood<br>hypocrites<br>jack<br>kardashian<br>kenny<br>kobe<br>kyliejenner<br>miles<br>minutes<br>musk<br>oxnard<br>ride<br>scott<br>taylor<br>toronto<br>van
+                  nuys<br>vegas<br>ventura<br>wedding
+                </div>
+                <div class="col">
+                  EVERYDAY<br>LIFE<br><br>animals<br>bag<br>bike<br>bottle<br>bus<br>california<br>cans<br>car<br>chickpeas<br>consumption<br>cosmetics<br>drought<br>electric<br>food<br>garbage<br>hours<br>meat<br>ocean<br>paper<br>plastic<br>recycle<br>society<br>straws<br>traffic<br>vegan<br>waste<br>water
+                </div>
+              </div>
+              </p>
+            </div>
+            <div class="paragraph">
+              <h3>The Final<br>
+                Dataset</h3>
+              <p>
+                After this, the team used the formula REGEXMATCH to find the comments in which each word is present and
+                created a co-occurrence matrix. Then, to each comment it was assigned one of the classes (topics) found,
+                according to the words that are featured. The comments that contain keywords from more than one topic
+                remain undefined. Moreover, the comments that feature no words of the keywords were not considered for
+                this website; this left us with 4483 comments out of the starting 8201.
+              <div class="row matrix">
+                <a href="https://docs.google.com/spreadsheets/d/1jqdoulPr6eottEnnnSwmcb7iL-O4BYXwnnzE9RTg9ro/edit?usp=sharing"
+                  target="_blank">
+                  <img src="./assets/pics/matrix.png"></img>
+                </a>
+              </div>
+              </p>
+            </div>
+            <img src="./assets/pics/faculty.png" id="faculty"></img>
+
+          </div>
+        </div>
+
+      </div>
+
+    </div>
+    <div class="card first" id="first">
+      <div class="heading">
+        <div class="title">DATA COLLECTION</div>
+        <div class="number">1</div>
+      </div>
+      <div id="scrollBox">
+        <div class="mainParagraph">
+          <h1>Data Collection</h1>
+          <h2 >The selection of the TikToks</h2>
+          <div class="paragraph">
+            <h3 >@Celebjets<br></h3>
+            <p>
+              The research started from the twitter page @CelebJets as it is one of the main pages where the private jet
+              debate is discussed. Jack Sweeney, an American programmer and entrepreneur, started the page in 2021 and
+              it consists of a bot programmed to track celebrities' private flights. Information such as route, time and
+              sometimes emissions are posted.
+            </p>
+          </div>
+          <div class="paragraph">
+            <h3>Account<br>
+              Suspension</h3>
+            <p>
+              Shortly after Elon Musk finalized his acquisition of Twitter, many pages were suspended because they were
+              considered inappropriate and dangerous for him and his family: they tracked the flights of his private
+              jets while also sharing their location. One of them is CelebJets itself, which has been suspended as of
+              December 15, 2022. On December 16, 2022, Musk posted a public poll for the reactivation of such pages, and
+              people were in favor. CelebJets has not yet been reactivated. (Truffaut-Wong, O. (2022). <i>The Twitter
+              Account Tracking Elon Musk’s Private Jet Is Suspended — Again.</i> The Cut.)
+
+            </p>
+          </div>
+          <div class="paragraph">
+            <h3>Research<br>
+              Process</h3>
+            <p>
+              From this starting point, the team decided to shift its focus to TikTok, as it is both a participatory
+              social network and a free discussion space, where content is proposed to users without necessarily
+              searching for it. This allows for a diverse user pool, as it is a platform with all types of users and
+              collects people interested in different fields.
+            </p>
+          </div>
+          <div class="paragraph">
+            <h3>Selection<br>
+              Criteria</h3>
+            <p>
+              The team searched for “Celebjets” on TikTok and many videos talking about the page appeared. It was then
+              decided to select 22 of them, all with a thing in common: the background is a screenshot of @Celebjets’s
+              posts from Twitter, and on top of it there is the person (TikToker) talking.
+            <div class="row">
+              <div class="col">
+                <img src="./assets/pics/bg-green.png">TikToker</img>
+
+              </div>
+              <div class="col">
+                <img src="./assets/pics/man-green.png">Celebjets page as bg</img>
+              </div>
+              <div class="col">
+                <img src="./assets/pics/total.png">TikTok video</img>
+              </div>
+            </div>
+            </p>
+          </div>
+          <div class="paragraph">
+            <h3>Final<br>
+              Results</h3>
+            <p>
+              With TKCommentExport, Octoparse and TikTokComment Scraper the team collected author, comments, captions,
+              URLs, number of likes and number of shares about the 22 videos. Then, we collected all the comments with
+              the nickname of the user who wrote it, the date, the link of the video id and the url of the video. The
+              final collection of 8201 comments from 22 videos. However, two of the videos have no comments, so it ends
+              up with 20 videos.
+            </p>
+            <img src="./assets/pics/faculty.png" id="faculty"></img>
+
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+    <script src="./disclousure/disclousure-animations.js"></script>
+    <script src="./animations.js"></script>
+
+
+</body>
+
+</html>

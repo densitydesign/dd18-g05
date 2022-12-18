@@ -1,0 +1,356 @@
+#nodes_1_ > g {
+  opacity: 1;
+}
+
+body {
+  background-color: black;
+}
+
+@font-face {
+  font-family: MonReg;
+  src: url(./assets/fonts/MonumentGrotesk-Regular.otf);
+}
+
+@font-face {
+  font-family: MonMed;
+  src: url(./assets/fonts/MonumentGrotesk-Medium.otf);
+}
+
+/* Stile della colonna con tutti i commenti */
+.DivScroll {
+  margin-left: 1.5vw;
+  position: fixed;
+  height: 100%;
+  width: 97vw;
+  top: 3vh;
+  /* background-color: yellow; */
+}
+.gruppi {
+  position: fixed;
+  font-family: MonReg;
+  width: 97vw;
+  overflow-y: hidden;
+  margin-top: 6vh;
+  height: 91vh;
+}
+
+.titoli {
+  position: absolute;
+  top: 0;
+  font-family: "Times New Roman", Times, serif;
+  letter-spacing: -0.07em;
+  font-size: 2vw;
+  column-gap: 0.8vw;
+  height: 6vh;
+  width: 97vw;
+  z-index: 2;
+}
+
+.t {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: inset 5px 5px 10px 0px rgba(255, 255, 255, 0.4);
+  border-radius: 10px 10px 0 0;
+}
+
+.t.commenti {
+box-shadow: none;
+color: white;
+}
+
+.t.pollution {
+  background-color: rgb(135, 244, 112);
+}
+
+.t.routine {
+  background-color: rgb(188, 108, 255);
+}
+
+.t.richness {
+  background-color: rgb(232, 94, 51);
+}
+
+.t.celebrities {
+  background-color: rgb(255, 238, 84);
+}
+
+.t.everyday {
+  background-color: rgb(253, 174, 205);
+}
+
+.b.pollution {
+  background-color: rgb(135, 244, 112);
+}
+
+.b.routine {
+  background-color: rgb(188, 108, 255);
+}
+
+.b.richness {
+  background-color: rgb(232, 94, 51);
+}
+
+.b.celebrities {
+  background-color: rgb(255, 238, 84);
+}
+
+.b.everyday {
+  background-color: rgb(253, 174, 205);
+}
+
+.colonne {
+  column-gap: 0.8vw;
+  height: 89vh;
+overflow-y: hidden;
+}
+
+.c {
+  padding: 0;
+  border-radius: 20px 20px 0 0;
+  background: #F1F1F1;
+  box-shadow: 0px 4px 6px #f1f1f1;
+  border-radius: 10px;
+
+}
+
+.c.commenti {
+  background-color: transparent;
+  box-shadow: none;
+}
+
+.spiegundo {
+  color: #f1f1f1;
+  line-height: 2.3vh;
+  font-size: 0.9vw;
+
+}
+
+.number {
+  position: absolute;
+  bottom: 0vh;
+  transform-origin: bottom;
+  column-gap: 0.8vw;
+  height: 9vh;
+  width: 97vw;
+  z-index: 2;
+}
+
+.n {
+  background-color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.25);
+  margin: 0.5%;
+}
+
+.counter {
+  position: absolute;
+  left: 1vw;
+  font-size: xx-large;
+}
+.testo2 {
+  position: absolute;
+  right: 1vw;
+  margin-top: 1vh;
+}
+
+.viewportCommenti::-webkit-scrollbar {
+  position: fixed;
+  opacity: 0;
+  width: 4px;
+  background-color: transparent;
+  z-index: -200;
+}
+
+.viewportCommenti::-webkit-scrollbar:hover {
+  opacity: 1;
+  background-color: transparent;
+}
+
+.viewportCommenti::-webkit-scrollbar-thumb {
+  background: #919191;
+}
+
+.viewportCommenti::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+.viewportCommenti {
+  width: 97vw;
+  position: absolute;
+  bottom: 0;
+  margin: 0;
+  left: 0;
+  height: 89vh;
+  background-color: transparent;
+  z-index: 1;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+#commenti {
+  padding: 0;
+  width: 15.5vw;
+  margin-top: 50vh;
+  margin-bottom: 40vh;
+  margin-left: 0;
+  translate: 16.3vw;
+  background-color: transparent;
+  font-size: 0.7vw;
+}
+
+.card-header {
+  padding: 0.3vw;
+  margin-top: 0.5vh;
+  margin-left: 0.3vw;
+  margin-right: 0.3vw;
+  font-size: 0.8rem;
+  background-color: white;
+  border-bottom: none;
+  
+}
+
+.section {
+  padding: 0;
+  margin: 0;
+  width: 15.5vw;
+  border-radius: 4px;
+}
+
+/* Stile colonne che salgono */
+.b {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+}
+
+#myBtn {
+  position: absolute; /* Fixed/sticky position */
+  bottom: 20px; /* Place the button at the bottom of the page */
+  right: 30px; /* Place the button 30px from the right */
+  z-index: 99; /* Make sure it does not overlap */
+  border: none; /* Remove borders */
+  outline: none; /* Remove outline */
+  background-color: red; /* Set a background color */
+  color: white; /* Text color */
+  cursor: pointer; /* Add a mouse pointer on hover */
+  padding: 15px; /* Some padding */
+  border-radius: 10px; /* Rounded corners */
+  font-size: 18px; /* Increase font size */
+}
+
+#myBtn:hover {
+  background-color: #555; /* Add a dark-grey background on hover */
+}
+
+/* Stile video fixed */
+
+.video {
+  position: sticky;
+  margin-top: 50%;
+  width: auto;
+  background-color: aqua;
+  height: auto;
+  z-index: 100;
+}
+
+.videoemb {
+  position: relative;
+  width: 100%;
+}
+
+/* KEYWORDS STILIZZATE */
+.CLUSTER1 {
+  background-color: rgb(212, 105, 212);
+  font-weight: bold;
+}
+
+.CLUSTER2 {
+  background-color: pink;
+  font-weight: bold;
+}
+
+.CLUSTER3 {
+  background-color: lightgreen;
+  font-weight: bold;
+}
+.CLUSTER4 {
+  background-color: lightcoral;
+  font-weight: bold;
+}
+.CLUSTER5 {
+  background-color: lightgoldenrodyellow;
+  font-weight: bold;
+}
+
+.filters1 {
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  top: 6vh;
+  width: 15.5vw;
+  padding: 0;
+  height: 20vh;
+  z-index: 2;
+  background-color: #eaeaea;
+}
+
+.filters1::-webkit-scrollbar {
+  width: 0.001vw;
+  display: none;
+}
+
+.filters2 {
+  display: inline;
+  background-color: white;
+  border-radius: 65px;
+  padding: 0.2vw;
+  font-size: 0.9rem;
+  box-shadow: 0.7392739653587341px 1.4785479307174683px 2.9570958614349365px 0px
+    rgba(0, 0, 0, 0.2);
+  
+}
+.filters3 {
+  position: absolute;
+  top: 0;
+  height: 18vh;
+  padding-top: 1vh;
+  padding-bottom: 3vh;
+  overflow-y: scroll;}
+
+  .filters3::-webkit-scrollbar {
+    width: 0.001vw;
+    display: none;
+  }
+
+.reset {
+  position: absolute;
+  bottom: 0;
+  text-align: center;
+  width: 100%;
+  background-color: black;
+  color: white;
+  z-index: 20;
+}
+
+.vista {
+  display: block;
+  z-index: 2;
+  margin-left: 0.3vw;
+  position: absolute;
+  top: 26.5vh;
+  left: 0;
+  height: 65vh;
+  width: 14.9vw;
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+.vista::-webkit-scrollbar {
+  display: none;
+}

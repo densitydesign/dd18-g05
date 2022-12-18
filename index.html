@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>JETOLOGY - sacred journey into the private jets debate</title>
+  <link
+  rel="stylesheet"
+  href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+  integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+  crossorigin="anonymous"
+/>
+  <link rel="stylesheet" href="./home/home.css">
+  <link rel="stylesheet" href="./headings.css">
+
+  <script src="./libraries/p5.min.js"></script>
+  <script src="./libraries/p5.sound.min.js"></script>
+
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+  integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+  crossorigin="anonymous"
+></script>
+<script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+  <script
+  src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+  integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+  crossorigin="anonymous"
+></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js"></script>
+
+
+
+
+</head>
+<body>
+
+  <div id="myModal" class="modal">
+    <!-- Modal content -->
+    <div class="modal-content" id="myModal1">
+     
+      <div id="modalBody">
+        <h2>#banprivatejets:<br>the social debate</h2>
+        <h1>THE PROJECT</h1>
+        <p id="pTheProject">
+          In 2022 private jets have become a relevant topic in the fight against climate change.
+Using #banprivatejets, groups of activists, politicians
+and scientists have begun to highlight the need
+to tax missions of private jets more decisively
+or, more extremely, to ban them. 
+        </p>
+        <h1>THE TEAM</h1>
+        <div class="row">
+          <div class="col">
+            
+            <p>Kangying Chen<br>Giuseppe Defilippis<br>Stefano Gubiolo<br>Maria Martinuz
+              </p>
+              <img src="./assets/gif/team3.gif" autoplay loop></img>
+          </div>
+          <div class="col">
+            <p>Donato Renzulli<br>Antonio Sacchet<br>Yuying Tang
+                </p>
+                
+          </div>
+          
+        </div>
+
+      </div>
+     
+    </div>
+  </div>
+  
+
+  <div class="row navbar">
+    <div class="col-6 logo"> <a href="./index.html"> <div id="logo-jet">   Jetology</div></a>  </div>
+<div class="navbar-sx">
+
+  <div class="col dropdown button-nav-explore">
+      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">explore</a>
+    <div class="dropdown-menu">
+     <a class="dropdown-item button-nav-archive" href="./debate.html">DEBATE</a>
+      <a class="dropdown-item button-nav-archive" href="./archive.html">DATASET</a>
+    </div>
+
+
+  </div>
+  <div class="col disclosure">  <a href="./disclosure.html">  <div class="button-nav-disclosure">  disclosure</div></a></div>
+  </div>
+</div>
+
+
+
+
+<div class="cards">
+  <div class="card third" id="canvas1">
+      <div class="edit">
+        <div class="row">
+          <div class="col-0.5">1
+            <img src="./assets/icons/Group 551.png"></img>
+          </div>
+      <h2 class="col-3">KEYWORDS & RESULTS</h2>
+      
+      <h1 class="col-6">WHAT ARE THE MAIN TOPICS OF THE DISCUSSION?</h1>
+    </div>
+        <p>
+          The comments under the videos were <br> divided by looking at selected<a id="keywordButton"> keywords</a>. <br> Some comments were about jet pollution, <span></span> <br> others not. Discover what people talked about.
+          <a href="./debate.html"> <button id="exploreButton">  EXPLORE DEBATE </button> </a> 
+          <a id="skipdataset" href="./archive.html">Skip to dataset →</a>
+          <div id="keywords">
+            <a class="keyword a"id="keyword1">FOOTPRINT</a>
+            <a class="keyword b"id="keyword2">MAINTENANCE</a>
+            <a class="keyword c"id="keyword3">KARDASHIAN</a>
+            <a class="keyword d"id="keyword4">STRAWS</a>
+            <a class="keyword e"id="keyword5">MONEY</a>
+
+            <a class="keyword a"id="keyword6">CLIMATE</a>
+            <a class="keyword b"id="keyword7">PILOT</a>
+            <a class="keyword c"id="keyword8">MUSK</a>
+            <a class="keyword d"id="keyword9">PAPER</a>
+            <a class="keyword e"id="keyword10">LIFESTYLE</a>
+
+            <a class="keyword a"id="keyword11">GREEN</a>
+            <a class="keyword b"id="keyword12">HANGAR</a>
+            <a class="keyword c"id="keyword13">DRAKE</a>
+            <a class="keyword d"id="keyword14">GARBAGE</a>
+            <a class="keyword e"id="keyword15">BUSINESS</a>
+
+            <a class="keyword a"id="keyword16">PLANET</a>
+            <a class="keyword b"id="keyword17">AVIATION</a>
+            <a class="keyword c"id="keyword18">CULTURE</a>
+            <a class="keyword d"id="keyword19">OCEAN</a>
+            <a class="keyword e"id="keyword20">TAX</a>
+          
+            <a class="keyword a"id="keyword21">TURTLES</a>
+            <a class="keyword b"id="keyword22">FUEL</a>
+            <a class="keyword c"id="keyword23">WEDDING</a>
+            <a class="keyword d"id="keyword24">VEGAN</a>
+            <a class="keyword e"id="keyword25">MILLIONAIRES</a>
+
+          </div>   
+        </div>
+  
+    <div class="box" id="box2"></div>
+  </div>
+  <div class="card second">
+    <div class="edit">
+      <!-- <img id="video2" src= "./1.gif" autoplay loop></img> -->
+      <div class="row">
+        <div class="col-0.5">1
+          <img src="./assets/icons/Group 550.png"></img>
+        </div>
+    <h2 class="col-3">TIKTOK COMMENTS</h2>
+    
+    <h1 class="col-6">WHAT DO PEOPLE THINK ABOUT CELEBJETS?</h1>
+  </div>
+
+   <img id="video2" src= "./assets/gif/1.gif" autoplay loop></img>  
+  <!-- <img id="video1" src= "./2.gif" autoplay loop></img> -->
+  <!-- <img  id="celebimage" src="celebjets.png" alt=""> -->
+<img id="video3" src= "./assets/gif/3.gif" autoplay loop></img> 
+
+
+
+  <p>
+    The 22 selected TikToks <br> all talk about theTwitter page <br> <a id="celebButton" href="./disclosure.html">@CelebJets</a>, that exposes<br>celebrities’ short flights and <br> their emissions.</p>
+
+    <div id="modalCelebjets">
+      <!-- Modal content -->
+      <img src="./assets/pics/celebjets-scroll-lungo.png"></img>
+       
+      
+    </div>
+
+
+</div>
+  
+  </div>
+  <div class="card first">
+    <div class="edit">
+      <div class="row">
+        <div class="col-0.5">1
+          <img src="./assets/icons/Group 549.png"></img>
+        </div>
+    <h2 class="col-3">RESEARCH FIELD</h2>
+    
+    <h1 class="col-6">WHAT IS THE DEBATE REALLY ABOUT?</h1>
+  </div>
+    <p>
+      Probably in the last year you have heard<br>of protests about private jets pollution.<br>In order to map the discussion around<br>the topic it was analysed the broad and<br><a id="kyliespan">heated </a>debate on TikTok. 
+    </p>
+    <img id="kylie" src="./assets/pics/kylie-jenner.png"></img>
+  </div>
+    <div class="box" id="box1"></div>
+  </div>
+</div>
+<div id="home">
+  
+  <video class="imagehome" src= "./assets/pics/homepage.mp4" autoplay loop muted></video>
+</div>
+
+<!-- partial -->
+<script src='https://unpkg.co/gsap@3/dist/gsap.min.js'></script>
+<script src='https://unpkg.com/gsap@3/dist/ScrollTrigger.min.js'></script>
+<script  src="./home/home.js"></script>
+<script  src="./home/home-animations.js"></script>
+<script  src="./animations.js"></script>
+
+
+
+
+
+</body>
+</html>
