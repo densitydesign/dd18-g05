@@ -21,6 +21,10 @@
   overflow-y: scroll;
 }
 
+.popup::-webkit-scrollbar {
+  display: none;
+}
+
 #poppollution {
   background-color: rgb(135, 244, 112);
 }
