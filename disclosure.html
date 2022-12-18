@@ -24,59 +24,67 @@
 
 <body>
 
-   <div id="myModal" class="modal">
+  <div id="myModal" class="modal">
     <!-- Modal content -->
     <div class="modal-content" id="myModal1">
-     
+
       <div id="modalBody">
         <h2>#banprivatejets:<br>the social debate</h2>
         <h1>THE PROJECT</h1>
         <p id="pTheProject">
           In 2022 private jets have become a relevant topic in the fight against climate change.
-Using #banprivatejets, groups of activists, politicians
-and scientists have begun to highlight the need
-to tax missions of private jets more decisively
-or, more extremely, to ban them. 
+          Using #banprivatejets, groups of activists, politicians
+          and scientists have begun to highlight the need
+          to tax missions of private jets more decisively
+          or, more extremely, to ban them. The project has been carried out during the Final Synthesis Design Studio
+          held by DensityDesign of the MSc in Communication Design, Politecnico di Milano. This web project is part of
+          previous research published in a <a
+            href="https://drive.google.com/file/d/1iZliKCNUlqo48o54cR9xiTehgVB1OEHA/view?usp=sharing"
+            target="_blank">report</a>.
         </p>
         <h1>THE TEAM</h1>
         <div class="row">
           <div class="col">
-            
+
             <p>Kangying Chen<br>Giuseppe Defilippis<br>Stefano Gubiolo<br>Maria Martinuz
-              </p>
-              <img src="./assets/gif/team3.gif" autoplay loop></img>
+            </p>
+            <img src="./assets/gif/team3.gif" autoplay loop></img>
           </div>
           <div class="col">
             <p>Donato Renzulli<br>Antonio Sacchet<br>Yuying Tang
-                </p>
-                
+            </p>
+
           </div>
-          
+
         </div>
 
       </div>
-     
+
     </div>
   </div>
-  
+
 
   <div class="row navbar">
-    <div class="col-6 logo"> <a href="./index.html"> <div id="logo-jet">   Jetology</div></a>  </div>
-<div class="navbar-sx">
+    <div class="col-6 logo"> <a href="./index.html">
+        <div id="logo-jet"> Jetology</div>
+      </a> </div>
+    <div class="navbar-sx">
 
-  <div class="col dropdown button-nav-explore">
-      <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">explore</a>
-    <div class="dropdown-menu">
-     <a class="dropdown-item button-nav-archive" href="./debate.html">DEBATE</a>
-      <a class="dropdown-item button-nav-archive" href="./archive.html">DATASET</a>
+      <div class="col dropdown button-nav-explore">
+        <a class="dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">explore</a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item button-nav-archive" href="./debate.html">DEBATE</a>
+          <a class="dropdown-item button-nav-archive" href="./archive.html">DATASET</a>
+        </div>
+
+
+      </div>
+      <div class="col disclosure"> <a href="./disclosure.html">
+          <div class="button-nav-disclosure"> disclosure</div>
+        </a></div>
     </div>
-
-
   </div>
-  <div class="col disclosure">  <a href="./disclosure.html">  <div class="button-nav-disclosure">  disclosure</div></a></div>
-  </div>
-</div>
-     <!-- navbar fine -->
+  <!-- navbar fine -->
 
 
   <div class="cards">
@@ -93,9 +101,13 @@ or, more extremely, to ban them.
               <p>
                 In the main page of the website, the “Explore”, the user is able to see the unfolding of the process of
                 categorization of the comments. By scrolling in the page the comments (that are first presented without
-                a cluster in the “Comments” column, slide into the other columns according to the topic discussed in it.
-                This happens thanks to the keywords: the presence of
-                the words determines a class, which represents the 5 different topics.
+                a cluster in the “Comments” column), slide into the other columns according to the topic discussed in it.
+                This happens thanks to the keywords: the presence of the words determines a class, which represents the 5 different topics.
+                Thanks to this interaction with the user and to the animation it is possible to understand how the
+                discussion is not only about pollution but is fragmented into several others. Seeing each comment moving
+                according to the keywords allows to make the user feel part of the debate; this is emphasized also by
+                the fact that the comments are presented following the order of the 20 TikTok videos that you can see at
+                the top of the "Comments" column.
                 The “Pollution” column is separated from the others to represent the topic that was expected to find
                 divided from the other 4, that were considered to be more unexpected in the debate. When a comment has
                 keywords from more than one topic it stays in the “Comments” column and remains undefined.
@@ -286,7 +298,7 @@ buttonpoll.addEventListener("click", buttonPressedpoll);
                 Starting from that matrix the team found the 136 most recurring words in the comments and put them in a
                 new row, joining the ones that had the same meaning (but different grammar, errors, syntax). In order to
                 understand which are the topics discussed by people in the comments we analyzed the keywords collected:
-                by looking at them we were able to identify five main areas of discussion.
+                by looking at them we were able to identify five main topics of discussion.
               </p>
             </div>
             <div class="paragraph">
@@ -296,7 +308,11 @@ buttonpoll.addEventListener("click", buttonPressedpoll);
                 The first topic found is about pollution in general and pollution caused by private jets. This was the
                 first and most expected topic found since the debate started mainly to talk about the impact of private
                 jets on climate change. After that we were left with a lot of other words and among them we were able to
-                detect 4 topics: richness, celebrities, flight routine and everyday actions.
+                detect 4 topics: Class struggle (divided between people against wealth or class struggle and people that
+                justify rich people’s actions), Celebrities (about specific public figures and scandals related to
+                them), flight routine (people and procedures involved when flying privately) and everyday actions
+                (comparing private jet’s pact on climate change and how small daily good deeds performed by people
+                seem).
               <div class="row keywords">
                 <div class="col">
                   POLLUTION<br><br>
@@ -389,9 +405,9 @@ buttonpoll.addEventListener("click", buttonPressedpoll);
       <div id="scrollBox">
         <div class="mainParagraph">
           <h1>Data Collection</h1>
-          <h2 >The selection of the TikToks</h2>
+          <h2>The selection of the TikToks</h2>
           <div class="paragraph">
-            <h3 >@Celebjets<br></h3>
+            <h3>@Celebjets<br></h3>
             <p>
               The research started from the twitter page @CelebJets as it is one of the main pages where the private jet
               debate is discussed. Jack Sweeney, an American programmer and entrepreneur, started the page in 2021 and
@@ -408,7 +424,7 @@ buttonpoll.addEventListener("click", buttonPressedpoll);
               jets while also sharing their location. One of them is CelebJets itself, which has been suspended as of
               December 15, 2022. On December 16, 2022, Musk posted a public poll for the reactivation of such pages, and
               people were in favor. CelebJets has not yet been reactivated. (Truffaut-Wong, O. (2022). <i>The Twitter
-              Account Tracking Elon Musk’s Private Jet Is Suspended — Again.</i> The Cut.)
+                Account Tracking Elon Musk’s Private Jet Is Suspended — Again.</i> The Cut.)
 
             </p>
           </div>
@@ -447,8 +463,9 @@ buttonpoll.addEventListener("click", buttonPressedpoll);
             <h3>Final<br>
               Results</h3>
             <p>
-              With TKCommentExport, Octoparse and TikTokComment Scraper the team collected author, comments, captions,
-              URLs, number of likes and number of shares about the 22 videos. Then, we collected all the comments with
+              With Octoparse and TikTokComment Scraper, that were used for the same purpose according to the number of
+              comments per video, the team collected author, comments, captions, URLs, number of likes and number of
+              shares about the 22 videos. Then, we collected all the comments with
               the nickname of the user who wrote it, the date, the link of the video id and the url of the video. The
               final collection of 8201 comments from 22 videos. However, two of the videos have no comments, so it ends
               up with 20 videos.
