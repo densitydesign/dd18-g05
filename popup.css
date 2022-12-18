@@ -205,3 +205,10 @@
 .nklist {
   font-family: MonReg;
 }
+
+.spiegundo {
+  font-family: MonReg;
+  text-align: center;
+  position: relative;
+  margin-top: 20%;
+}
