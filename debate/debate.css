@@ -1,18 +1,14 @@
 #nodes_1_ > g {
   opacity: 1;
 }
-html {
-  height: 100%;
-  width: 100%;
-  overflow: auto;
-}
+
 body {
   margin-bottom: 1.5vh;
   margin-right: 1.5vw;
   background-color: rgb(241, 241, 241);
   width: 100vw;
   height: 101vh;
-  scroll-behavior: auto;
+
   overflow: auto;
 }
 

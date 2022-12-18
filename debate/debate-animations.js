@@ -3,7 +3,7 @@
 var ciao = document.getElementById("DivScroll");
 var prima = document.getElementById("BeforeScroll");
 var back = document.getElementsByTagName("BODY")[0];
-var oldScrollY = window.scrollY;
+
 // prima.onscroll = function () {
 //   ciao.style.transform = "translateY(-86.5vh)";
 
@@ -16,7 +16,7 @@ var oldScrollY = window.scrollY;
 //   ciao.style.transition = "2s";
 // };
 back.onscroll = function () {
-  if (oldScrollY < window.scrollY) {
+  if (5 < window.scrollY) {
     ciao.style.transform = "translateY(-85vh)";
     ciao.style.pointerEvents = "all";
     ciao.style.transition = "2s";
@@ -25,5 +25,4 @@ back.onscroll = function () {
     ciao.style.pointerEvents = "none";
     ciao.style.transition = "2s";
   }
-  oldScrollY = window.scrollY;
 };
