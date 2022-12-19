@@ -49,9 +49,10 @@
 
   padding: 0;
   overflow-y: scroll;
+  overflow-x: hidden;
 }
 
-.mainParagraph::-webkit-scrollbar-track {
+.mainParagraph::-webkit-scrollbar {
   display: none;
 }
 
@@ -112,6 +113,7 @@
   line-height: 40%;
   font-family: MonReg;
   overflow-y: scroll;
+  overflow-x: hidden;
   font-size: 1.5vw;
   padding-bottom: 4vh;
 }
