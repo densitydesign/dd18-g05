@@ -13,16 +13,12 @@
 .popup {
   width: 60vw;
   height: 80vh;
-  padding: 1.5vw;
+  margin-bottom: 0;
+  padding: 0;
   display: none;
   border-radius: 20px;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.15),
     -10px 10px 10px rgba(0, 0, 0, 0.15);
-  overflow-y: hidden;
-}
-
-.popup::-webkit-scrollbar {
-  display: none;
 }
 
 #poppollution {
@@ -45,6 +41,20 @@
   background-color: rgb(253, 174, 205);
 }
 
+.mainParagraph {
+  position: absolute;
+  width: 40vw;
+  height: 77.5vh;
+  margin: 1.5%;
+
+  padding: 0;
+  overflow-y: scroll;
+}
+
+.mainParagraph::-webkit-scrollbar-track {
+  display: none;
+}
+
 .titpop {
   font-family: "Times New Roman", Times, serif;
   position: relative;
@@ -60,30 +70,54 @@
   font-family: "Times New Roman", Times, serif;
   font-size: 4vw;
   position: relative;
-  margin-right: 10%;
-  margin-top: 0.7vh;
+  margin-left: 1vw;
+  margin-top: 1vh;
+  width: 80%;
   letter-spacing: -0.045em;
   line-height: 91%;
 }
 
 .frase2 {
-  font-family: MonReg;
   position: relative;
-  width: 20%;
+  margin-left: 1vw;
   margin-right: 10vw;
   margin-top: 9vh;
+  width: 30vw;
   line-height: 97.5%;
   font-size: 1.4vw;
 }
 
 .titlist {
-  padding-left: 0.4vw;
   margin-left: 0;
   font-family: "Times New Roman", Times, serif;
   text-align: left;
-  position: relative;
-  margin-top: 28vh;
+  position: absolute;
+  bottom: 45vh;
+  left: 70%;
+
+  font-size: 2vw;
+  right: 1vw;
+
+  width: 20vw;
+}
+
+.listcont {
+  position: absolute;
+  text-align: left;
+  bottom: 1vh;
+  left: 70%;
+  height: 43vh;
+  width: 20vw;
+  padding-top: 1vh;
+  line-height: 40%;
+  font-family: MonReg;
+  overflow-y: scroll;
   font-size: 1.5vw;
+  padding-bottom: 4vh;
+}
+
+.listcont::-webkit-scrollbar {
+  display: none;
 }
 
 .close {
@@ -95,16 +129,20 @@
 }
 
 .closepop {
-  /* padding: 0; */
-  width: 100%;
-  height: 77vh;
+  position: absolute;
+  right: 0vw;
+  top: 1vw;
+  padding: 0;
+  width: 8vw;
+  text-align: right;
 }
 
 .imgclose {
   opacity: 1;
   width: 8vw;
-  margin-top: 0.4vh;
-  padding-right: 1vw;
+  position: relative;
+  top: 0;
+  right: 0;
   transition: transform 0.2s; /* Animation */
 }
 
@@ -123,76 +161,64 @@
   padding-left: 0;
 }
 
-.listcont {
-  position: relative;
-  text-align: left;
-  height: 38vh;
-  padding-left: 0.4vw;
-  padding-top: 1vh;
-  padding-bottom: 10vh;
-  line-height: 40%;
-  margin-top: 2vh;
-  overflow-y: scroll;
-  font-size: 1.5vw;
-}
-
-.listcont::-webkit-scrollbar {
-  display: none;
-}
-
 .scrollgradientcel {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
+  right: 0;
   height: 5vh;
-  width: 90%;
+  width: 95%;
   z-index: 500;
   background-color: #ffee54;
-  box-shadow: -10px -30px 8px #ffee54;
+  box-shadow: -10px -10px 8px #ffee54;
 }
 
 .scrollgradientpol {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
+  right: 0;
   height: 5vh;
-  width: 90%;
+  width: 95%;
   z-index: 500;
   background-color: #87f470;
-  box-shadow: -10px -30px 8px #87f470;
+  box-shadow: -10px -10px 8px #87f470;
 }
 
 .scrollgradientrou {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
+  right: 0;
   height: 5vh;
-  width: 90%;
+  width: 95%;
   z-index: 500;
   background-color: #bc6cff;
-  box-shadow: -10px -30px 8px #bc6cff;
+  box-shadow: -10px -10px 8px #bc6cff;
 }
 
 .scrollgradientric {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
+  right: 0;
   height: 5vh;
-  width: 90%;
+  width: 95%;
   z-index: 500;
   background-color: #e85e33;
-  box-shadow: -10px -30px 8px #e85e33;
+  box-shadow: -10px -10px 8px #e85e33;
 }
 
 .scrollgradienteve {
   position: absolute;
   bottom: 0;
-  margin-bottom: 2vh;
+  margin-bottom: 0vh;
+  right: 0;
   height: 5vh;
+  width: 95%;
   z-index: 500;
-  width: 90%;
   background-color: #fdaecd;
-  box-shadow: -10px -30px 8px #fdaecd;
+  box-shadow: -10px -10px 8px #fdaecd;
 }
 
 .titfocus {
@@ -200,13 +226,18 @@
   position: relative;
   margin-top: 5vh;
 }
-
+.focusBox {
+  width: 40vw;
+  margin-bottom: 5vh;
+  margin-left: 0;
+}
 .focus {
-  font-family: MonReg;
   position: relative;
   margin-top: 1vh;
+  font-family: MonReg;
   font-size: 1rem;
   line-height: 98%;
+  margin-bottom: 1vh;
 }
 
 .nklist {
