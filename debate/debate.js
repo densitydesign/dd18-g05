@@ -469,6 +469,7 @@ for (let button of buttons) {
 
 // Pollution
 $("#titpol").click(function () {
+  blockScroll();
   $("#contenitorepop").css({
     display: "block",
   });
@@ -490,6 +491,7 @@ $("#titpol").click(function () {
 });
 
 $("#closepol").click(function () {
+  startScroll();
   $("#contenitorepop").css({
     display: "none",
   });
@@ -500,6 +502,7 @@ $("#closepol").click(function () {
 
 // Routine
 $("#titrou").click(function () {
+  blockScroll();
   $("#contenitorepop").css({
     display: "block",
   });
@@ -521,6 +524,7 @@ $("#titrou").click(function () {
 });
 
 $("#closerou").click(function () {
+  startScroll();
   $("#contenitorepop").css({
     display: "none",
   });
@@ -531,6 +535,7 @@ $("#closerou").click(function () {
 
 // Richness
 $("#titric").click(function () {
+  blockScroll();
   $("#contenitorepop").css({
     display: "block",
   });
@@ -552,6 +557,7 @@ $("#titric").click(function () {
 });
 
 $("#closeric").click(function () {
+  startScroll();
   $("#contenitorepop").css({
     display: "none",
   });
@@ -562,6 +568,7 @@ $("#closeric").click(function () {
 
 // Celebrities
 $("#titcel").click(function () {
+  blockScroll();
   $("#contenitorepop").css({
     display: "block",
   });
@@ -583,6 +590,7 @@ $("#titcel").click(function () {
 });
 
 $("#closecel").click(function () {
+  startScroll();
   $("#contenitorepop").css({
     display: "none",
   });
@@ -593,6 +601,7 @@ $("#closecel").click(function () {
 
 // Everyday
 $("#titeve").click(function () {
+  blockScroll();
   $("#contenitorepop").css({
     display: "block",
   });
@@ -614,6 +623,7 @@ $("#titeve").click(function () {
 });
 
 $("#closeeve").click(function () {
+  startScroll();
   $("#contenitorepop").css({
     display: "none",
   });
@@ -622,3 +632,12 @@ $("#closeeve").click(function () {
   });
 });
 // });
+
+function blockScroll() {
+  let back = document.getElementsByTagName("BODY")[0];
+  back.style.overflowY = "hidden";
+}
+function startScroll() {
+  let back = document.getElementsByTagName("BODY")[0];
+  back.style.overflowY = "scroll";
+}
