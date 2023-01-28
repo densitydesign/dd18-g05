@@ -105,9 +105,9 @@ routine.forEach((section) => {
 
     if (valoreRoutine >= "304") {
       document.getElementById("skipbutton").innerHTML = "go to dataset";
-
       document.getElementById("goarch").href = "./archive.html";
       document.getElementById("BottoneTop").style.display = "block";
+      document.getElementById("undcount").style.display = "block";
     } else {
       document.getElementById("skipbutton").innerHTML = "Skip All";
       document.getElementById("goarch").href = "#4483";
@@ -116,6 +116,7 @@ routine.forEach((section) => {
     if (valoreRoutine < "304") {
       document.getElementById("goarch").href = "#4483";
       document.getElementById("BottoneTop").style.display = "none";
+      document.getElementById("undcount").style.display = "none";
     }
   }
 
@@ -130,6 +131,7 @@ routine.forEach((section) => {
       document.getElementById("skipbutton").innerHTML = "go to dataset";
       document.getElementById("goarch").href = "./archive.html";
       document.getElementById("BottoneTop").style.display = "block";
+      document.getElementById("undcount").style.display = "block";
     } else {
       document.getElementById("goarch").href = "#4483";
       document.getElementById("skipbutton").innerHTML = "Skip All";
@@ -138,6 +140,7 @@ routine.forEach((section) => {
     if (valoreRoutine < "304") {
       document.getElementById("goarch").href = "#4483";
       document.getElementById("BottoneTop").style.display = "none";
+      document.getElementById("undcount").style.display = "none";
     }
   }
 
